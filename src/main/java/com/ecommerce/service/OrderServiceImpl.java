@@ -11,8 +11,6 @@ import com.ecommerce.entity.Orders;
 import com.ecommerce.entity.enums.OrderStatus;
 import com.ecommerce.repo.IOrdersRepository;
 
-import jakarta.persistence.criteria.Order;
-
 
 @Service("OrderService")
 public class OrderServiceImpl implements IOrderService{

@@ -33,9 +33,9 @@ public class OrderOperationsController {
 	public ResponseEntity<Orders> findTheOrderById(@PathVariable("id") Integer oId){
 		return new ResponseEntity<Orders>(iOrderService.getOrderById(oId),HttpStatus.OK);
 	}
-//	@PutMapping("path/{id}")
-//	public ResponseEntity<?> putMethodName(@PathVariable Integer id, OrderStatus status) {
-//		return new ResponseEntity<String>(iOrderService.updateOrderStatus(id, status),HttpStatus.ACCEPTED);
-//	}
+	@PutMapping("path/{id}")
+	public ResponseEntity<?> putMethodName(@PathVariable Integer id, OrderStatus status) {
+		return new ResponseEntity<String>(iOrderService.updateOrderStatus(id, status),HttpStatus.ACCEPTED);
+	}
 
 }
